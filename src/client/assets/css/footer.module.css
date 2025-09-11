@@ -1,0 +1,298 @@
+.uiFooter {
+    background: #f1f1f1;
+    display: inline-block;
+    width: 100%;
+    padding: 80px 0 50px;
+}
+
+.uiFooter .uiFooterMenus .uiFooterInfoContent {
+    padding-right: 60px;
+}
+
+.uiFooter .uiFooterMenus .uiFooterInfoContent .uiBrandContent {
+    margin-bottom: 16px;
+}
+
+.uiFooter .uiFooterMenus .uiFooterInfoContent .uiBrandContent .uiBrandLogo {
+    display: inline-block;
+}
+
+.uiFooter .uiFooterMenus .uiFooterInfoContent .uiBrandContent .uiBrandLogo img {
+    height: 40px;
+    width: auto;
+}
+
+.uiFooter .uiFooterMenus .uiFooterInfoContent .uiFooterDesc {
+    margin-bottom: 2rem;
+}
+
+.uiFooter .uiFooterMenus .uiFooterInfoContent .uiFooterDesc p {
+    color: rgba(var(--Blue-Gray), 1);
+}
+
+.uiFooter .uiFooterMenus .uiFooterInfoContent .uiFooterDesc p:last-child {
+    margin-bottom: 0;
+}
+
+.uiFooter .uiFooterMenus .uiFooterInfoContent .uiFooterContactInfo {
+    margin-bottom: 1rem;
+}
+
+.uiFooter .uiFooterMenus .uiFooterInfoContent .uiFooterContactInfo h5 {
+    color: rgba(var(--Eerie-Black), 1);
+    font-size: 18px;
+    margin: 0;
+    display: inline-block;
+    line-height: 22px;
+    letter-spacing: -.2px;
+    font-weight: 600;
+}
+
+.uiFooter .uiFooterMenus .uiFooterInfoContent .uiFooterContactInfo p,
+.uiFooter .uiFooterMenus .uiFooterInfoContent .uiFooterContactInfo a,
+.uiFooter .uiFooterMenus .uiFooterInfoContent .uiFooterContactInfo address {
+    color: rgba(var(--Blue-Gray), 1);
+    margin-bottom: 0;
+}
+
+.uiFooter .uiFooterMenus .uiFooterInfoContent .uiFooterContactInfo a:hover {
+    color: rgba(var(--Persian-Blue), 1);
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavTitel {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: rgba(var(--Eerie-Black), 1);
+    margin-bottom: 22px;
+    font-family: var(--Bricolage);
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterNav .uiNav .uiNavItem {
+    margin: 0 0 15px 0;
+    width: 100%;
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterNav .uiNav .uiNavItem:last-child {
+    margin-bottom: 0;
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterNav .uiNav .uiNavItem .uiNavLink {
+    padding: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(var(--Blue-Gray), 1);
+    display: inline-block;
+    width: fit-content;
+    text-decoration: none;
+    position: relative;
+    transition: all 3ms;
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterNav .uiNav .uiNavItem .uiNavLink:hover {
+    color: rgba(var(--Persian-Blue), 1);
+    padding-left: 12px;
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterNav .uiNav .uiNavItem .uiNavLink::before {
+    position: absolute;
+    width: 0px;
+    height: 2.5px;
+    border-radius: 3px;
+    background: rgba(var(--Persian-Blue), 1);
+    content: '';
+    left: 0;
+    top: 6px;
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterNav .uiNav .uiNavItem .uiNavLink:hover::before {
+    width: 6px;
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterAds {
+    margin-bottom: 2rem;
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterAds .uiNav .uiNavItem {
+    margin-bottom: 10px;
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterAds .uiNav .uiNavItem:last-child {
+    margin-bottom: 0;
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterAds .uiNav .uiNavItem .uiNavLink {
+    padding: 0;
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterAds .uiNav .uiNavItem .uiNavLink img {
+    width: 100%;
+    height: fit-content;
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterSocial .uiNav .uiNavItem {
+    margin-right: 15px;
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterSocial .uiNav .uiNavItem:last-child {
+    margin-right: 0;
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterSocial .uiNav .uiNavItem .uiNavLink {
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(var(--Persian-Blue), 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(var(--Persian-Blue), 1);
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterSocial .uiNav .uiNavItem .uiNavLink span {
+    color: rgba(var(--Persian-Blue), 1);
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterSocial .uiNav .uiNavItem .uiNavLink:hover {
+    border-color: rgba(var(--Persian-Blue), 1);
+    color: rgba(var(--White), 1);
+    background: rgba(var(--Persian-Blue), 1);
+}
+
+.uiFooter .uiFooterMenus .uiFooterNavContent .uiFooterSocial .uiNav .uiNavItem .uiNavLink:hover span {
+    color: rgba(var(--White), 1);
+}
+
+.uiFooter .uiFooterMenus .uiFooterInfoContent,
+.uiFooter .uiFooterMenus .uiFooterNavContent {
+    margin-bottom: 30px;
+}
+
+.uiFooter .uiFooterCopyright {
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 50px 0 0 0;
+    border-top: 1px solid #cecece;
+}
+
+.uiFooter .uiFooterCopyright .uiCopyrightWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightContact h6 {
+    font-size: 16px;
+    color: rgba(var(--Eerie-Black), 1);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightContact span {
+    display: inline-block;
+    width: 100%;
+    margin: 6px 0 0 0;
+}
+
+.uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightContact span a {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(var(--Blue-Gray), 1);
+}
+
+.uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightContact span a:hover {
+    color: rgba(var(--Persian-Blue), 1);
+}
+
+.uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightNav .uiNav .uiNavItem {
+    margin-right: 15px;
+    position: relative;
+}
+
+.uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightNav .uiNav .uiNavItem:last-child {
+    margin-right: 0;
+}
+
+.uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightNav .uiNav .uiNavItem::after {
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 0.5px;
+    height: 100%;
+    content: '';
+    background: rgba(var(--Blue-Gray), 1);
+}
+
+.uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightNav .uiNav .uiNavItem:last-child::after {
+    display: none;
+}
+
+.uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightNav .uiNav .uiNavItem .uiNavLink,
+.uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightNav .uiNav .uiNavItem span {
+    padding: 0;
+    color: rgba(var(--Blue-Gray), 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -.2px;
+}
+
+.uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightNav .uiNav .uiNavItem span a {
+    color: rgba(var(--Blue-Gray), 1);
+}
+
+.uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightNav .uiNav .uiNavItem span a:hover {
+    color: rgba(var(--Persian-Blue), 1);
+}
+
+.uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightNav .uiNav .uiNavItem .uiNavLink:hover {
+    color: rgba(var(--Persian-Blue), 1);
+}
+
+@media (max-width: 992px) {
+    .uiFooter {
+        padding: 50px 30px 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .uiFooter .uiFooterCopyright .uiCopyrightWrap {
+        display: block;
+    }
+
+    .uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightContact {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightNav .uiNav {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 519px) {
+    .uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightNav .uiNav .uiNavItem:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightNav .uiNav .uiNavItem:nth-child(3)::after {
+        display: none;
+    }
+
+    .uiFooter .uiFooterCopyright .uiCopyrightWrap .uiCopyrightNav .uiNav .uiNavItem:last-child {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 425px) {
+    .uiFooter {
+        padding: 50px 0px 50px;
+    }
+}

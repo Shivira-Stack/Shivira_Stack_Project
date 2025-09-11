@@ -1,0 +1,80 @@
+.uiCookieBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e5e6e7;
+    z-index: 9999;
+}
+
+.uiCookieBar .uiCookieContent {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.uiCookieBar .uiCookieContent .uiCookieText {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    font-family: var(--Inter);
+    color: rgba(var(--Eerie-Black), 1);
+}
+
+.uiCookieBar .uiCookieContent .uiCookieButtonGroup {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.uiCookieBar .uiCookieContent .uiCookieButtonGroup .uiCookieButton {
+    display: inline-block;
+    padding: 8px 19px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid rgba(var(--Blue-Gray), 0.3);
+    margin-right: 15px;
+    box-shadow: 4px 4px 4px rgba(var(--Blue-Gray), 0.25);
+}
+
+.uiCookieBar .uiCookieContent .uiCookieButtonGroup .uiCookieAccept {
+    color: rgba(var(--Eerie-Black), 1);
+    background: linear-gradient(rgba(var(--White), 1), rgba(var(--White), 1)) padding-box, conic-gradient(from 50deg, rgba(var(--Persian-Blue), 1) 0deg, rgba(var(--Persian-Blue), 1) 53.3deg, rgba(var(--White), 1) 90.46deg, rgba(var(--White), 1) 126.24deg, rgba(var(--White), 1) 178.82deg, rgba(var(--Eerie-Black), 1) 360deg) border-box;
+}
+
+.uiCookieBar .uiCookieContent .uiCookieButtonGroup .uiCookieReject {
+    color: rgba(var(--Eerie-Black), 1);
+    background: linear-gradient(rgba(var(--White), 1), rgba(var(--White), 1)) padding-box, conic-gradient(from 50deg, rgba(var(--Fiery-Red), 1) 0deg, rgba(var(--Fiery-Red), 1) 53.3deg, rgba(var(--White), 1) 90.46deg, rgba(var(--White), 1) 126.24deg, rgba(var(--White), 1) 178.82deg, rgba(var(--Eerie-Black), 1) 360deg) border-box;
+}
+
+.uiCookieBar .uiCookieContent .uiCookieButtonGroup .uiCookieAccept:hover {
+    color: rgba(var(--Persian-Blue), 1);
+    background: linear-gradient(rgba(var(--White), 1), rgba(var(--White), 1)) padding-box, conic-gradient(from var(--angle), rgba(var(--Persian-Blue), 1) 0deg, rgba(var(--Persian-Blue), 1) 53.3deg, rgba(var(--White), 1) 90.46deg, rgba(var(--White), 1) 126.24deg, rgba(var(--White), 1) 178.82deg, rgba(var(--Persian-Blue), 1) 360deg) border-box;
+}
+
+.uiCookieBar .uiCookieContent .uiCookieButtonGroup .uiCookieReject:hover {
+    color: rgba(var(--Fiery-Red), 1);
+    background: linear-gradient(rgba(var(--White), 1), rgba(var(--White), 1)) padding-box, conic-gradient(from var(--angle), rgba(var(--Fiery-Red), 1) 0deg, rgba(var(--Fiery-Red), 1) 53.3deg, rgba(var(--White), 1) 90.46deg, rgba(var(--White), 1) 126.24deg, rgba(var(--White), 1) 178.82deg, rgba(var(--Fiery-Red), 1) 360deg) border-box;
+}
+
+.uiCookieBar .uiCookieContent .uiCookieButtonGroup .uiCookieButton:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 576px) {
+    .uiCookieBar .uiCookieContent {
+        display: block;
+    }
+
+    .uiCookieBar .uiCookieContent .uiCookieText {
+        text-align: center;
+    }
+
+    .uiCookieBar .uiCookieContent .uiCookieButtonGroup {
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,49 @@
+.uiWrap {
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+    overflow: hidden;
+}
+
+.uiContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.uiCircle img {
+    position: absolute;
+    top: -55px;
+    left: 0;
+    width: 120px;
+    height: auto;
+    display: inline-block;
+    animation: rotate360 10s linear infinite;
+    transform-origin: center center;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.uiIcon img {
+    width: 120px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}

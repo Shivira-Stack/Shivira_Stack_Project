@@ -1,0 +1,81 @@
+.uiAuthWrap {
+    min-height: 100vh;
+    width: 100%;
+    padding: 1.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.uiAuthWrap .uiAuthContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - calc(1.5rem * 2));
+}
+
+.uiAuthWrap .uiAuthContent .uiAuthFormWrap {
+    max-width: 440px;
+    height: auto;
+}
+
+.uiAuthWrap .uiAuthContent .uiAuthFormWrap .uiAuthCard {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5e5e5;
+    background: rgba(var(--White), 1);
+    border-radius: 24px;
+    box-shadow: 0px 0px 22px rgba(var(--Eerie-Black), 0.1);
+}
+
+.uiAuthWrap .uiAuthContent .uiAuthFormWrap .uiAuthCard .uiAuthCardBody {
+    padding: 35px;
+}
+
+.uiAuthWrap .uiAuthContent .uiAuthFormWrap .uiAuthCard .uiAuthCardBody .uiAuthBrand {
+    margin-bottom: 1rem;
+}
+
+.uiAuthWrap .uiAuthContent .uiAuthFormWrap .uiAuthCard .uiAuthCardBody .uiAuthBrand a img {
+    height: 40px;
+    width: auto;
+}
+
+.uiAuthWrap .uiAuthContent .uiAuthFormWrap .uiAuthCard .uiAuthCardBody .uiAuthForm .uiAuthHeader {
+    margin-bottom: 1rem;
+}
+
+.uiAuthWrap .uiAuthContent .uiAuthFormWrap .uiAuthCard .uiAuthCardBody .uiAuthForm .uiAuthHeader .uiTitle{
+    font-size: 1.875rem;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.uiAuthWrap .uiAuthContent .uiAuthFormWrap .uiAuthCard .uiAuthCardBody .uiAuthForm .uiAuthHeader .uiText {
+    font-weight: 500;
+}
+
+.uiAuthWrap .uiAuthContent .uiAuthFormWrap .uiAuthCard .uiAuthCardBody .uiAuthForm .uiLink{
+    font-weight: 500;
+    color: rgba(var(--Eerie-Black), 1);
+    background: transparent !important;
+    border: none !important;
+    padding: 0;
+}
+
+.uiAuthWrap .uiAuthContent .uiAuthFormWrap .uiAuthCard .uiAuthCardBody .uiAuthForm .uiLink:hover {
+    color: rgba(var(--Persian-Blue), 1);
+}
+
+.uiAuthWrap .uiAuthContent .uiAuthFormWrap .uiAuthCard .uiAuthCardBody .uiAuthForm .uiReChaptcha {
+    transform: scale(0.85);
+    transform-origin: 0 0;
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 440px) {
+    .uiAuthWrap .uiAuthContent .uiAuthFormWrap {
+        width: 100%;
+    }
+}

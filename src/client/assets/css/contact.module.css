@@ -1,0 +1,251 @@
+.uiSectionContactInfo .uiTitle,
+.uiSectionContactForm .uiTitle {
+    display: inline-block;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.uiSectionContactInfo .uiDesc,
+.uiSectionContactForm .uiDesc {
+    display: inline-block;
+    width: 100%;
+    color: rgba(var(--Eerie-Black), 1);
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    letter-spacing: -.2px;
+    margin-bottom: 28px;
+}
+
+.uiSectionContactInfo .uiContactInfo {
+    margin-bottom: 1.5rem;
+}
+
+.uiSectionContactInfo .uiContactInfo .uiInfoTitle {
+    font-size: 18px;
+    margin: 0;
+    display: inline-block;
+    line-height: 22px;
+    letter-spacing: -.2px;
+    font-weight: 600;
+    color: rgba(var(--Persian-Blue), 1);
+}
+
+.uiSectionContactInfo .uiContactInfo .uiInfoText {
+    color: rgba(var(--Blue-Gray), 1);
+    margin-bottom: 0;
+}
+
+.uiSectionContactInfo .uiContactInfo .uiInfoText a {
+    color: rgba(var(--Blue-Gray), 1);
+}
+
+.uiSectionContactInfo .uiContactInfo .uiInfoText a:hover {
+    color: rgba(var(--Persian-Blue), 1);
+}
+
+.uiSectionContactInfo .uiContactSocial .uiNav .uiNavItem {
+    margin-right: 15px;
+}
+
+.uiSectionContactInfo .uiContactSocial .uiNav .uiNavItem:last-child {
+    margin-right: 0;
+}
+
+.uiSectionContactInfo .uiContactSocial .uiNav .uiNavItem .uiNavLink {
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(var(--Persian-Blue), 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(var(--White), 1);
+    background: rgba(var(--Persian-Blue), 1);
+}
+
+.uiSectionContactInfo .uiContactSocial .uiNav .uiNavItem .uiNavLink i {
+    color: rgba(var(--White), 1);
+}
+
+.uiSectionContactInfo .uiContactSocial .uiNav .uiNavItem .uiNavLink:hover {
+    border-color: rgba(var(--Persian-Blue), 1);
+    color: rgba(var(--Persian-Blue), 1);
+    background: transparent;
+}
+
+.uiSectionContactInfo .uiContactSocial .uiNav .uiNavItem .uiNavLink:hover i {
+    color: rgba(var(--Persian-Blue), 1);
+}
+
+.uiSectionContactForm .uiPrimaryBtn {
+    margin: 25px 0;
+}
+
+@media (max-width: 992px) {
+    .uiSectionContactInfo {
+        margin-bottom: 0;
+    }
+
+    .uiSectionContactForm {
+        margin-top: 25px;
+    }
+
+    .uiSectionContactForm .primary-btn {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .uiSectionContactInfo {
+        padding-bottom: 36px;
+        border-bottom: 1px solid #E8E8E8;
+    }
+
+    .uiSectionContactInfo .uiCard {
+        border: none;
+        box-shadow: none;
+    }
+
+    .uiSectionContactInfo .uiCard .uiCardBody {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .uiReChaptcha {
+        transform: scale(0.95);
+        transform-origin: 0 0;
+    }
+}
+
+@media (max-width: 368px) {
+    .uiReChaptcha {
+        transform: scale(0.85);
+        transform-origin: 0 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .uiSectionCard .uiSectionCardBody {
+        padding: 20px;
+    }
+}
+
+.uiMapContent {
+    display: flex;
+    box-shadow: -2px 2px 70px -25px rgba(var(--Black), 0.06);
+}
+
+.uiMapInfo {
+    width: 387px;
+}
+
+.uiMapCard {
+    width: 100%;
+    height: 100%;
+    background: rgba(var(--White), 1);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.uiMapCardBody {
+    padding: 35px 30px;
+}
+
+.uiMapCardBody .uiuiTitle {
+    display: inline-block;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: calc(22px + .5rem);
+}
+
+.uiNavItem {
+    margin-bottom: 18px;
+}
+
+.uiNavItem:last-child {
+    margin-bottom: 0;
+}
+
+.uiMapListContent {
+    display: flex;
+}
+
+.uiMapListIcon {
+    width: 22px;
+}
+
+.uiMapListIcon i {
+    color: rgba(var(--Persian-Blue), 1);
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+}
+
+.uiMapListInfo {
+    width: calc(100% - 22px);
+}
+
+.uiMapListInfo .uiMaptext {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 0;
+    color: rgba(var(--Blue-Gray), 1);
+}
+
+.uiMapListInfo span {
+    display: block;
+}
+
+.uiMapListInfo .uiMapSmallText {
+    font-size: 12px;
+    color: rgba(var(--Eerie-Black), 1);
+}
+
+.uiMapCardBody .uiPrimaryBtn {
+    margin-top: 30px;
+}
+
+.uiMapContent .uiSection {
+    width: calc(100% - 387px);
+    border-radius: 0px 20px 20px 0;
+    position: relative;
+}
+
+.uiMapContent .uiSection iframe {
+    border-radius: 0px 20px 20px 0;
+    width: 100%;
+    height: 380px;
+    border: 0;
+    margin-bottom: -5.5px;
+}
+
+@media (max-width: 992px) {
+    .uiMapContent {
+        flex-direction: column;
+    }
+
+    .uiMapContent .uiMapinfo {
+        width: 100%;
+    }
+
+    .uiMapContent  .uiMapInfo .uiMapCard {
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .uiMapContent .uiSection {
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .uiMapContent .uiMapInfo .uiMapCard .uiMapCardBody {
+        padding: 25px 20px;
+    }
+}

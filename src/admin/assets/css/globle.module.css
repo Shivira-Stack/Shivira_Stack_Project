@@ -1,0 +1,292 @@
+@import url('../fonts/font.css');
+
+:root {
+    /* Fonts */
+    --Inter: 'Inter', sans-serif;
+
+    --White: 255, 255, 255;
+    --Black: 0, 0, 0;
+    --Ghost-White: 244, 245, 255;
+    --Blue-Gray: 109, 112, 129;
+    --Persian-Blue: 1, 42, 201;
+    --Neutral-Dark-Gray: 29, 30, 32;
+    --Eerie-Black: 26, 26, 26;
+    --Fiery-Red: 255, 51, 1;
+    --Blue-Ribbon: 4, 107, 248;
+    --info: 42, 133, 255;
+    --info-bg: 226, 232, 244;
+    --success: 16, 185, 129;
+    --success-bg: 224, 237, 232;
+    --warning: 245, 158, 11;
+    --warning-bg: 246, 235, 220;
+    --danger: 255, 106, 85;
+    --danger-bg: 247, 230, 227;
+
+}
+
+body {
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(var(--Blue-Gray), 1);
+    background: rgba(var(--White), 1);
+    font-family: var(--Inter);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--Inter);
+    color: rgba(var(--Eerie-Black), 1);
+}
+
+a {
+    text-decoration: none;
+    color: rgba(var(--Blue-Gray), 1);
+}
+
+a:hover {
+    color: rgba(var(--Persian-Blue), 1);
+}
+
+.uiBodyWrap {
+    position: relative;
+    font-family: var(--Inter);
+    font-size: 14px;
+    font-weight: 400;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    background: rgba(var(--Ghost-White), 1);
+}
+
+.uiAlert {
+    position: absolute;
+    top: 17px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.uiAlert .uiAlertContent {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.uiAlert .uiAlertContent * {
+    font-weight: 500;
+}
+
+.uiAlertInfo .uiAlertContent {
+    background: rgba(var(--info-bg), 1);
+    color: rgba(var(--info), 1);
+}
+
+.uiAlertSuccess .uiAlertContent {
+    background: rgba(var(--success-bg), 1);
+    color: rgba(var(--success), 1);
+}
+
+.uiAlertWarning .uiAlertContent {
+    background: rgba(var(--warning-bg), 1);
+    color: rgba(var(--warning), 1);
+}
+
+.uiAlertDanger .uiAlertContent {
+    background: rgba(var(--danger-bg), 1);
+    color: rgba(var(--danger), 1);
+}
+
+.uiErrorText {
+    display: inline-block;
+    width: auto;
+    color: rgba(var(--Fiery-Red), 1);
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.uiPrimaryBtn {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1rem 1.4rem;
+    text-align: center;
+    border-radius: 12px;
+    line-height: 1;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    text-decoration: none !important;
+    border: none;
+    transition: all 0.3s ease;
+    color: rgba(var(--White), 1);
+    background: rgba(var(--Persian-Blue), 1);
+}
+
+.uiPrimaryBtn:hover {
+    color: rgba(var(--White), 1);
+    background: rgba(var(--Eerie-Black), 1);
+}
+
+.uiFormInputWrap {
+    margin-bottom: 1rem;
+}
+
+.uiFormPasswordWrap {
+    position: relative;
+}
+
+.uiFormOtpInputs {
+    display: flex;
+    align-items: center;
+}
+
+.uiFormLabel {
+    font-weight: 500;
+}
+
+.uiFormControl {
+    padding: 0.65rem 0.85rem;
+    border-radius: 0.75rem;
+    font-size: 14px;
+    font-weight: 500;
+    background: rgba(var(--Ghost-White), 1);
+    border-color: rgba(var(--Ghost-White), 1);
+    box-shadow: none;
+    color: rgba(var(--Eerie-Black), 1);
+}
+
+.uiFormControl::placeholder {
+    color: rgba(var(--Blue-Gray), 1);
+}
+
+.uiFormControl:focus {
+    color: rgba(var(--Eerie-Black), 1);
+    background: rgba(var(--White), 1);
+    border-color: rgba(var(--Persian-Blue), 1);
+    box-shadow: none;
+}
+
+.uiFormInputWrap .uiInputWatchButton {
+    position: absolute;
+    right: 0.85rem;
+    bottom: 0.65rem;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.uiFormOtpInputs .uiFormControl {
+    margin: 0px 5px;
+    text-align: center;
+}
+
+.uiFormOtpInputs span {
+    margin: 0px 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(var(--Eerie-Black), 1);
+}
+
+.uiFormOtpInputs .uiFormControl:first-child {
+    margin-left: 0;
+}
+
+.uiFormOtpInputs .uiFormControl:last-child {
+    margin-right: 0;
+}
+
+.uiMainLayout {
+    position: relative;
+    height: 100vh;
+    transition: all 0.3s ease;
+}
+
+.uiMainLayoutOverlay {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100vh;
+    background-color: rgba(var(--Black), 0.3);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    z-index: 9;
+    transition: background-color, backdrop-filter 0.3s ease;
+}
+
+.uiMainAside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: rgba(var(--White), 1);
+    border-right: none;
+    z-index: 9;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.uiMainAsideActive {
+    width: 290px;
+    border-right: 1px solid rgba(var(--Neutral-Dark-Gray), 0.2);
+}
+
+.uiMainContent {
+    margin-left: 290px;
+    width: calc(100% - 290px);
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.uiMainContentFull {
+    margin-left: 0;
+    width: 100%;
+}
+
+.uiSectionsWrap {
+    height: calc(100% - 35.8px);
+    padding-top: calc(64px + 1.5rem);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: calc(35.8px + 1.5rem);
+    overflow-y: auto;
+}
+
+.uiSectionsWrap::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(var(--Black), 0.3);
+    background-color: rgba(var(--Ghost-White), 1);
+}
+
+.uiSectionsWrap::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgba(var(--Ghost-White), 1);
+}
+
+.uiSectionsWrap::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--Neutral-Dark-Gray), 1);
+}
+
+@media (max-width: 1024px) {
+    .uiMainLayoutOverlayActive {
+        width: 100vw;
+    }
+
+    .uiMainContent {
+        margin-left: 0;
+        width: 100%;
+    }
+}

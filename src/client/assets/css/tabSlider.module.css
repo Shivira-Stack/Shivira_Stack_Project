@@ -1,0 +1,35 @@
+.uiTabSlider {
+    margin-bottom: 30px;
+}
+
+.uiTabSlider .uiTabSwiper .uiTabSlide {
+    width: auto;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+
+.uiTabSlider .uiTabSwiper .uiTabSlide .uiTabButton {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid rgba(var(--Blue-Gray), 0.3);
+    box-shadow: 4px 4px 4px rgba(var(--Blue-Gray), 0.25);
+    background: rgba(var(--White), 1);
+}
+
+.uiTabSlider .uiTabSwiper .uiTabSlide .uiTabButton span{
+    color: rgba(var(--Eerie-Black), 1);
+}
+
+.uiTabSlider .uiTabSwiper .uiTabSlide .uiTabButton:hover,
+.uiTabSlider .uiTabSwiper .uiTabSlide .uiTabButton.uiTabActive {
+    background: linear-gradient(rgba(var(--White), 1), rgba(var(--White), 1)) padding-box, conic-gradient(from var(--angle), rgba(var(--Persian-Blue), 1) 0deg, rgba(var(--Persian-Blue), 1) 53.3deg, rgba(var(--White), 1) 90.46deg, rgba(var(--White), 1) 126.24deg, rgba(var(--White), 1) 178.82deg, rgba(var(--Persian-Blue), 1) 360deg) border-box;
+    box-shadow: none;
+}
+
+.uiTabSlider .uiTabSwiper .uiTabSlide .uiTabButton:hover span,
+.uiTabSlider .uiTabSwiper .uiTabSlide .uiTabButton.uiTabActive span {
+    color: rgba(var(--Persian-Blue), 1);
+}
