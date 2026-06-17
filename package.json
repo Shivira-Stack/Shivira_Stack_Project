@@ -1,0 +1,36 @@
+{
+  "name": "shivira-stack",
+  "private": true,
+  "scripts": {
+    "dev:web": "npm run dev --workspace=web",
+    "dev:client": "npm run dev --workspace=client",
+    "dev:employee": "npm run dev --workspace=employee",
+    "dev:admin": "npm run dev --workspace=admin",
+    "dev:backend": "npm run start:dev --workspace=backend",
+
+    "dev:web+backend": "concurrently \"npm run dev:web\" \"npm run dev:backend\"",
+    "dev:client+backend": "concurrently \"npm run dev:client\" \"npm run dev:backend\"",
+    "dev:employee+backend": "concurrently \"npm run dev:employee\" \"npm run dev:backend\"",
+    "dev:admin+backend": "concurrently \"npm run dev:admin\" \"npm run dev:backend\"",
+
+    "dev:web+admin+backend": "concurrently \"npm run dev:web\" \"npm run dev:admin\" \"npm run dev:backend\"",
+    "dev:client+admin+backend": "concurrently \"npm run dev:client\" \"npm run dev:admin\" \"npm run dev:backend\"",
+    "dev:employee+admin+backend": "concurrently \"npm run dev:employee\" \"npm run dev:admin\" \"npm run dev:backend\"",
+
+    "dev:all": "concurrently \"npm run dev:web\" \"npm run dev:client\" \"npm run dev:employee\" \"npm run dev:admin\" \"npm run dev:backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3",
+    "prettier": "^3.7.4",
+    "turbo": "^2.9.18",
+    "typescript": "5.9.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@11.16.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
