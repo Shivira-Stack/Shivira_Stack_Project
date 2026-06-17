@@ -5,7 +5,7 @@ function SignIn() {
     return (
         <>
             <Seo
-                title="Sign In | Shivira Stack"
+                title="Sign In"
                 description="Welcome to Shivira Stack"
                 keywords="shivira, stack, software"
             />
