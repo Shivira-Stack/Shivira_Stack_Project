@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 const API_URL = import.meta.env.VITE_API_URL;
 
 function Seo({
-    URL=API_URL,
+    apiURL=API_URL,
     lang = "en",
     utf = "UTF-8",
     title = "Page",
@@ -35,22 +35,22 @@ function Seo({
             <link rel="canonical" href={url} />
 
             {/* Favicon Icon */}
-            <link rel="apple-touch-icon" sizes="57x57" href={`${URL}${faviconURL}/apple-icon-57x57.png`} />
-            <link rel="apple-touch-icon" sizes="60x60" href={`${URL}${faviconURL}/apple-icon-60x60.png`} />
-            <link rel="apple-touch-icon" sizes="72x72" href={`${URL}${faviconURL}/apple-icon-72x72.png`} />
-            <link rel="apple-touch-icon" sizes="76x76" href={`${URL}${faviconURL}/apple-icon-76x76.png`} />
-            <link rel="apple-touch-icon" sizes="114x114" href={`${URL}${faviconURL}/apple-icon-114x114.png`} />
-            <link rel="apple-touch-icon" sizes="120x120" href={`${URL}${faviconURL}/apple-icon-120x120.png`} />
-            <link rel="apple-touch-icon" sizes="144x144" href={`${URL}${faviconURL}/apple-icon-144x144.png`} />
-            <link rel="apple-touch-icon" sizes="152x152" href={`${URL}${faviconURL}/apple-icon-152x152.png`} />
-            <link rel="apple-touch-icon" sizes="180x180" href={`${URL}${faviconURL}/apple-icon-180x180.png`} />
-            <link rel="icon" type="image/png" sizes="192x192" href={`${URL}${faviconURL}/android-icon-192x192.png`} />
-            <link rel="icon" type="image/png" sizes="32x32" href={`${URL}${faviconURL}/favicon-32x32.png`} />
-            <link rel="icon" type="image/png" sizes="96x96" href={`${URL}${faviconURL}/favicon-96x96.png`} />
-            <link rel="icon" type="image/png" sizes="16x16" href={`${URL}${faviconURL}/favicon-16x16.png`} />
-            <link rel="manifest" href={`${URL}${faviconURL}/manifest.json`} />
+            <link rel="apple-touch-icon" sizes="57x57" href={`${apiURL}${faviconURL}/apple-icon-57x57.png`} />
+            <link rel="apple-touch-icon" sizes="60x60" href={`${apiURL}${faviconURL}/apple-icon-60x60.png`} />
+            <link rel="apple-touch-icon" sizes="72x72" href={`${apiURL}${faviconURL}/apple-icon-72x72.png`} />
+            <link rel="apple-touch-icon" sizes="76x76" href={`${apiURL}${faviconURL}/apple-icon-76x76.png`} />
+            <link rel="apple-touch-icon" sizes="114x114" href={`${apiURL}${faviconURL}/apple-icon-114x114.png`} />
+            <link rel="apple-touch-icon" sizes="120x120" href={`${apiURL}${faviconURL}/apple-icon-120x120.png`} />
+            <link rel="apple-touch-icon" sizes="144x144" href={`${apiURL}${faviconURL}/apple-icon-144x144.png`} />
+            <link rel="apple-touch-icon" sizes="152x152" href={`${apiURL}${faviconURL}/apple-icon-152x152.png`} />
+            <link rel="apple-touch-icon" sizes="180x180" href={`${apiURL}${faviconURL}/apple-icon-180x180.png`} />
+            <link rel="icon" type="image/png" sizes="192x192" href={`${apiURL}${faviconURL}/android-icon-192x192.png`} />
+            <link rel="icon" type="image/png" sizes="32x32" href={`${apiURL}${faviconURL}/favicon-32x32.png`} />
+            <link rel="icon" type="image/png" sizes="96x96" href={`${apiURL}${faviconURL}/favicon-96x96.png`} />
+            <link rel="icon" type="image/png" sizes="16x16" href={`${apiURL}${faviconURL}/favicon-16x16.png`} />
+            <link rel="manifest" href={`${apiURL}${faviconURL}/manifest.json`} />
             <meta name="msapplication-TileColor" content="#ffffff" />
-            <meta name="msapplication-TileImage" content={`${URL}${faviconURL}/ms-icon-144x144.png`} />
+            <meta name="msapplication-TileImage" content={`${apiURL}${faviconURL}/ms-icon-144x144.png`} />
 
             {/* Open Graph */}
             <meta property="og:type" content="website" />
