@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { HelmetProvider } from "react-helmet-async";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
+import VendorsHead from "./contexts/vendors_contexts";
 
 // const Home = lazy(() => import("../pages/Home"));
 const AuthLayout = lazy(() => import("./layouts/auth_layout"));
@@ -14,6 +15,7 @@ function Main() {
     return (
         <>
             <HelmetProvider>
+                <VendorsHead />
                 <BrowserRouter>
                     <Suspense fallback={<div>Loading...</div>}>
                         <Routes>

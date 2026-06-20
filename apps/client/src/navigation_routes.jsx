@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { HelmetProvider } from "react-helmet-async";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
+import VendorsHead from "./contexts/vendors_contexts";
 
 // const Home = lazy(() => import("../pages/Home"));
 const AuthLayout = lazy(() => import("./layouts/auth_layout"));
@@ -14,6 +15,7 @@ function Main() {
     return (
         <>
             <HelmetProvider>
+                <VendorsHead />
                 <BrowserRouter>
                     <Suspense fallback={<div>Loading...</div>}>
                         <Routes>
@@ -21,7 +23,7 @@ function Main() {
                                 <Route path="sign_in" index element={<SignIn />} />
                             </Route>
                             <Route path='/' element={<MainLayout />}>
-                                <Route path="dashboard" element={<h1>dashboard</h1>} />
+                                <Route index element={<h1>Home</h1>} />
                             </Route>
 
                             <Route path="*" element={<ErrorLayout><h1>Page Not Found</h1></ErrorLayout>} />

@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 const API_URL = import.meta.env.VITE_API_URL;
 
 function Seo({
-    apiURL=API_URL,
+    apiURL = API_URL,
     lang = "en",
     utf = "UTF-8",
     title = "Page",
@@ -24,6 +24,7 @@ function Seo({
         >
             {/* Basic SEO */}
             <meta charset={utf} />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>{title + " | " + project}</title>
 
             <meta name="description" content={description} />
@@ -65,6 +66,7 @@ function Seo({
             <meta name="twitter:title" content={title + " | " + project} />
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image" content={image} />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Helmet>
     );
 }
