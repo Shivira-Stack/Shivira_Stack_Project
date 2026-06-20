@@ -48,10 +48,10 @@ async function bootstrap() {
 
   await app.listen(port, '0.0.0.0');
 
-  console.log(`🚀 Server running on port ${port}`);
+  console.log(`🚀 Server running on port http://localhost:${port}`);
   console.log('NODE_ENV:', process.env.NODE_ENV);
-console.log('PROJECT_NAME:', process.env.PROJECT_NAME);
-console.log('FRONTEND_URL:', process.env.FRONTEND_URL);
+  console.log('PROJECT_NAME:', process.env.PROJECT_NAME);
+  console.log('FRONTEND_URL:', process.env.FRONTEND_URL);
 }
 
 bootstrap();
