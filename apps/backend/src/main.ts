@@ -44,14 +44,16 @@ async function bootstrap() {
     }),
   );
 
-  const port = process.env.PORT || 5000;
+  const port = process.env.PORT || 6001;
 
   await app.listen(port, '0.0.0.0');
 
   console.log(`🚀 Server running on port http://localhost:${port}`);
-  console.log('NODE_ENV:', process.env.NODE_ENV);
-  console.log('PROJECT_NAME:', process.env.PROJECT_NAME);
-  console.log('FRONTEND_URL:', process.env.FRONTEND_URL);
+  console.log('Environment:', process.env.NODE_ENV);
+  console.log('Project:', process.env.PROJECT_NAME);
+  console.log('Website:', process.env.FRONTEND_URL);
+  console.log('User Panel:', process.env.FRONTEND_URL_1);
+  console.log('Admin Panel:', process.env.FRONTEND_URL_2);
 }
 
 bootstrap();

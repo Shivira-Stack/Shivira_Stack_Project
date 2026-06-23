@@ -24,99 +24,99 @@ export const apihomePage = () => `
           <script src="${process.env.BACKEND_URL}/vendors/bootstrap/js/popper.min.js"></script>
           <script src="${process.env.BACKEND_URL}/vendors/bootstrap/js/bootstrap.min.js"></script>
           <style>
-        body {
-            min-height: 100vh;
-            background: linear-gradient(135deg, #0f172a 0%, #01299C 50%, #224BBE 100%);
-            overflow: hidden;
-            position: relative;
-            font-family: Inter, Arial, sans-serif;
-        }
-
-        .bg-shape {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(120px);
-            opacity: .3;
-        }
-
-        .shape-1 {
-            width: 350px;
-            height: 350px;
-            background: #60a5fa;
-            top: -100px;
-            left: -100px;
-        }
-
-        .shape-2 {
-            width: 400px;
-            height: 400px;
-            background: #8b5cf6;
-            right: -100px;
-            bottom: -100px;
-        }
-
-        .api-card {
-            background: rgba(255,255,255,.08);
-            backdrop-filter: blur(18px);
-            border: 1px solid rgba(255,255,255,.15);
-            border-radius: 24px;
-            color: white;
-            max-width: 700px;
-            box-shadow: 0 25px 50px rgba(0,0,0,.25);
-        }
-
-        .logo-circle {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            background: rgba(255,255,255,1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 42px;
-            margin: auto;
-        }
-
-        .status-dot {
-            width: 10px;
-            height: 10px;
-            background: #1AB79F;
-            border-radius: 50%;
-            display: inline-block;
-            animation: pulse 1.5s infinite;
-        }
-
-        .badge-online {
-            background: rgba(26, 183, 159, 0.15);
-            color: #1AB79F;
-            border: 1px solid rgba(26, 183, 159, 0.3);
-            padding: 10px 16px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 14px;
-        }
-
-        .env-value {
-            color: #FDAB06;
-            font-weight: 600;
-            text-transform: capitalize;
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-                opacity: 1;
+            body {
+                min-height: 100vh;
+                background: linear-gradient(135deg, #0f172a 0%, #01299C 50%, #224BBE 100%);
+                overflow: hidden;
+                position: relative;
+                font-family: Inter, Arial, sans-serif;
             }
-            50% {
-                transform: scale(1.4);
-                opacity: .6;
+
+            .bg-shape {
+                position: absolute;
+                border-radius: 50%;
+                filter: blur(120px);
+                opacity: .3;
             }
-            100% {
-                transform: scale(1);
-                opacity: 1;
+
+            .shape-1 {
+                width: 350px;
+                height: 350px;
+                background: #60a5fa;
+                top: -100px;
+                left: -100px;
             }
-        }
-    </style>
+
+            .shape-2 {
+                width: 400px;
+                height: 400px;
+                background: #8b5cf6;
+                right: -100px;
+                bottom: -100px;
+            }
+
+            .api-card {
+                background: rgba(255,255,255,.08);
+                backdrop-filter: blur(18px);
+                border: 1px solid rgba(255,255,255,.15);
+                border-radius: 24px;
+                color: white;
+                max-width: 700px;
+                box-shadow: 0 25px 50px rgba(0,0,0,.25);
+            }
+
+            .logo-circle {
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                background: rgba(255,255,255,1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 42px;
+                margin: auto;
+            }
+
+            .status-dot {
+                width: 10px;
+                height: 10px;
+                background: #1AB79F;
+                border-radius: 50%;
+                display: inline-block;
+                animation: pulse 1.5s infinite;
+            }
+
+            .badge-online {
+                background: rgba(26, 183, 159, 0.15);
+                color: #1AB79F;
+                border: 1px solid rgba(26, 183, 159, 0.3);
+                padding: 10px 16px;
+                border-radius: 50px;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            .env-value {
+                color: #FDAB06;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+                50% {
+                    transform: scale(1.4);
+                    opacity: .6;
+                }
+                100% {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+        </style>
         </head>
         <body>
           <div class="container min-vh-100 d-flex align-items-center justify-content-center">
