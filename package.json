@@ -8,16 +8,16 @@
   "dev:admin": "npm run dev --workspace=admin",
   "dev:backend": "npm run start:dev --workspace=backend",
 
-  "dev:web+backend": "concurrently \"npm run dev:web\" \"npm run dev:backend\"",
-  "dev:client+backend": "concurrently \"npm run dev:client\" \"npm run dev:backend\"",
-  "dev:employee+backend": "concurrently \"npm run dev:employee\" \"npm run dev:backend\"",
-  "dev:admin+backend": "concurrently \"npm run dev:admin\" \"npm run dev:backend\"",
+  "dev:web+backend": "concurrently \"npm run dev:backend\" \"npm run dev:web\"",
+  "dev:client+backend": "concurrently \"npm run dev:backend\" \"npm run dev:client\"",
+  "dev:employee+backend": "concurrently \"npm run dev:backend\" \"npm run dev:employee\"",
+  "dev:admin+backend": "concurrently \"npm run dev:backend\" \"npm run dev:admin\"",
 
-  "dev:web+admin+backend": "concurrently \"npm run dev:web\" \"npm run dev:admin\" \"npm run dev:backend\"",
-  "dev:client+admin+backend": "concurrently \"npm run dev:client\" \"npm run dev:admin\" \"npm run dev:backend\"",
-  "dev:employee+admin+backend": "concurrently \"npm run dev:employee\" \"npm run dev:admin\" \"npm run dev:backend\"",
+  "dev:web+admin+backend": "concurrently \"npm run dev:backend\" \"npm run dev:web\" \"npm run dev:admin\"",
+  "dev:client+admin+backend": "concurrently \"npm run dev:backend\" \"npm run dev:client\" \"npm run dev:admin\"",
+  "dev:employee+admin+backend": "concurrently \"npm run dev:backend\" \"npm run dev:employee\" \"npm run dev:admin\"",
 
-  "dev:all": "concurrently \"npm run dev:web\" \"npm run dev:client\" \"npm run dev:employee\" \"npm run dev:admin\" \"npm run dev:backend\""
+  "dev:all": "concurrently \"npm run dev:backend\" \"npm run dev:web\" \"npm run dev:client\" \"npm run dev:employee\" \"npm run dev:admin\""
 },
   "devDependencies": {
     "concurrently": "^10.0.3",

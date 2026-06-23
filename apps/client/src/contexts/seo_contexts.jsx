@@ -6,8 +6,7 @@ function Seo({
     lang = "en",
     utf = "UTF-8",
     title = "Page",
-    project = "Shivira Stack",
-    faviconURL = "/favicon",
+    project = "Classmate Test",
     description = "Shivira Stack Web Application",
     keywords = "",
     author = "Shivira Stack",
@@ -24,8 +23,7 @@ function Seo({
         >
             {/* Basic SEO */}
             <meta charset={utf} />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>{title + " | " + project}</title>
+            <title>{title + " | " + "Admin" + " | " + project}</title>
 
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />
@@ -35,31 +33,13 @@ function Seo({
             {/* Canonical */}
             <link rel="canonical" href={url} />
 
-            {/* Favicon Icon */}
-            <link rel="apple-touch-icon" sizes="57x57" href={`${apiURL}${faviconURL}/apple-icon-57x57.png`} />
-            <link rel="apple-touch-icon" sizes="60x60" href={`${apiURL}${faviconURL}/apple-icon-60x60.png`} />
-            <link rel="apple-touch-icon" sizes="72x72" href={`${apiURL}${faviconURL}/apple-icon-72x72.png`} />
-            <link rel="apple-touch-icon" sizes="76x76" href={`${apiURL}${faviconURL}/apple-icon-76x76.png`} />
-            <link rel="apple-touch-icon" sizes="114x114" href={`${apiURL}${faviconURL}/apple-icon-114x114.png`} />
-            <link rel="apple-touch-icon" sizes="120x120" href={`${apiURL}${faviconURL}/apple-icon-120x120.png`} />
-            <link rel="apple-touch-icon" sizes="144x144" href={`${apiURL}${faviconURL}/apple-icon-144x144.png`} />
-            <link rel="apple-touch-icon" sizes="152x152" href={`${apiURL}${faviconURL}/apple-icon-152x152.png`} />
-            <link rel="apple-touch-icon" sizes="180x180" href={`${apiURL}${faviconURL}/apple-icon-180x180.png`} />
-            <link rel="icon" type="image/png" sizes="192x192" href={`${apiURL}${faviconURL}/android-icon-192x192.png`} />
-            <link rel="icon" type="image/png" sizes="32x32" href={`${apiURL}${faviconURL}/favicon-32x32.png`} />
-            <link rel="icon" type="image/png" sizes="96x96" href={`${apiURL}${faviconURL}/favicon-96x96.png`} />
-            <link rel="icon" type="image/png" sizes="16x16" href={`${apiURL}${faviconURL}/favicon-16x16.png`} />
-            <link rel="manifest" href={`${apiURL}${faviconURL}/manifest.json`} />
-            <meta name="msapplication-TileColor" content="#ffffff" />
-            <meta name="msapplication-TileImage" content={`${apiURL}${faviconURL}/ms-icon-144x144.png`} />
-
             {/* Open Graph */}
             <meta property="og:type" content="website" />
             <meta property="og:title" content={title + " | " + project} />
             <meta property="og:description" content={description} />
             <meta property="og:image" content={image} />
             <meta property="og:url" content={url} />
-            <meta property="og:site_name" content="Shivira Stack" />
+            <meta property="og:site_name" content={project} />
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
