@@ -6,7 +6,7 @@ function Seo({
     lang = "en",
     utf = "UTF-8",
     title = "Page",
-    project = "Classmate Test",
+    project = "Shivira Stack",
     description = "Shivira Stack Web Application",
     keywords = "",
     author = "Shivira Stack",
@@ -23,7 +23,7 @@ function Seo({
         >
             {/* Basic SEO */}
             <meta charset={utf} />
-            <title>{title + " | " + "Admin" + " | " + project}</title>
+            <title>{title + " | " + "Client" + " | " + project}</title>
 
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />

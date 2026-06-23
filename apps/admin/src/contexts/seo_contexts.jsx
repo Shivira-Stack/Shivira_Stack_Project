@@ -6,7 +6,7 @@ function Seo({
     lang = "en",
     utf = "UTF-8",
     title = "Page",
-    project = "Classmate Test",
+    project = "Shivira Stack",
     description = "Shivira Stack Web Application",
     keywords = "",
     author = "Shivira Stack",
